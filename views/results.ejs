@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<div class="descriptions">
+    <ul>
+    <% data["results"].forEach(function(movie){ %>
+           <li>
+            <form action="/reviews/<%= movie["id"] %>" method="GET">
+                <div>
+                    <strong><%= movie["title"] %></strong>
+                    - Release on: <%= movie["release_date"] %>
+                    - Id: <%= movie["id"] %>
+                    - <%= movie["overview"] %>
+                    - <em>Rating: <%= movie["vote_average"] %></em>
+                    <img src="/<%= movie["backdrop_path"] %>">
+                </div>
+                <input type="submit" name="movie_id" value="Review">
+            </form> 
+           </li> 
+    <% }) %>  
+    </ul>
+</div>
+
+<%- include("partials/footer") %>

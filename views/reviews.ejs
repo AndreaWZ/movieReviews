@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+
+<div>
+    <h2>REVIEW CONTENTS</h2>
+    
+    <% info["results"].forEach(function(review){ %>
+        <p>
+            <strong><%= review["author"] %></strong>
+            - <%= review["content"] %>
+        </p>
+    <% }) %>
+</div>
+
+<%- include("partials/footer") %>

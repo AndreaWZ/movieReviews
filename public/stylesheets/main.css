@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    margin: 0;
+    position: fixed;
+    background-color: #dcddde;;
+    width: 100%;
+    border-radius: 0;
+}
+
+.form-inline {
+    margin: 8px;
+    float: right;
+}
+
+button {
+    color: black;
+}
+
+#welcomePage {
+    background-image: url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 55px;
+    padding-top: 170px;
+}
+
+.movies {
+    height: 100vh;
+}
+
+.descriptions {
+    padding-top: 65px;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 65px
+}
+

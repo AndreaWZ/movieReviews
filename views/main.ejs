@@ -1,1 +1,21 @@
-<h1>MAIN HOMEPAGE!!</h1>
+<%- include("partials/header") %>
+
+    <div id="welcomePage">
+        <h1>🎬 Welcome To Movie Review  🎭 </h1>
+    </div>
+
+    <div class="movies">
+        <ul>
+            <% data["results"].forEach(function(upComingmovie){ %>
+                <li>
+                    <strong><%= upComingmovie["title"] %></strong>
+                    - Release On: <%= upComingmovie["release_date"] %>
+                    - <%= upComingmovie["overview"] %>
+                    - <em>Rating: <%= upComingmovie["vote_average"] %></em>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+
+    </body>
+</html>
