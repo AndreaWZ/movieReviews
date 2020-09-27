@@ -3,16 +3,16 @@
     <ul>
     <% data["results"].forEach(function(movie){ %>
            <li>
-            <form action="/reviews/<%= movie["id"] %>" method="GET">
-                <div>
-                    <strong><%= movie["title"] %></strong>
-                    - Release on: <%= movie["release_date"] %>
-                    - Id: <%= movie["id"] %>
-                    - <%= movie["overview"] %>
-                    - <em>Rating: <%= movie["vote_average"] %></em>
-                    <img src="/<%= movie["backdrop_path"] %>">
+            <form action="/reviews/<%= movie["title"] %>/<%= movie["id"] %>" method="GET">
+                <div class="container-fluid">
+                    <strong class="title"><%= movie["title"] %></strong>
+                    </br>
+                    <img src="https://image.tmdb.org/t/p/original<%= movie["poster_path"] %>"></br>
+                    <%= movie["overview"] %></br>
+                    Release on: <%= movie["release_date"] %> </br>
+                    <em>Rating: <%= movie["vote_average"] %></em>
+                    <input class="submit btn btn-info" type="submit" name="movie_id" value="Review">
                 </div>
-                <input type="submit" name="movie_id" value="Review">
             </form> 
            </li> 
     <% }) %>  

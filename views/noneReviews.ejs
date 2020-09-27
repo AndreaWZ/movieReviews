@@ -10,21 +10,11 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/">MReview</a>
         </nav>
-<div>
-    <h2>Reviews: <%= movieTitle %></h2>
-    <ul>
-        <li>
-            <% info["results"].forEach(function(review){ %>
-                <div class="container-fluid">
-                    <p>
-                        <strong><%= review["author"] %>:</strong></br>
-                        <%= review["content"] %>
-                    </p>
-                </div>
-            <% }) %>
-        </li>
-    </ul>
-    
-</div>
+        <div class="noReviews">
+            <img class="oops" src="https://images-na.ssl-images-amazon.com/images/I/418Jmnejj8L._AC_.jpg"/>
+            <h3>
+                <i class="text-danger">'<%= movieTitle %>'</i> has not reviews
+            </h3>
+        </div>
 
 <%- include("partials/footer") %>

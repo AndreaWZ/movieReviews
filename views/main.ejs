@@ -4,14 +4,19 @@
         <h1>🎬 Welcome To Movie Review  🎭 </h1>
     </div>
 
-    <div class="movies">
+    <h2>Upcoming Movies:</h2>
+
+    <div class="container">
         <ul>
             <% data["results"].forEach(function(upComingmovie){ %>
                 <li>
-                    <strong><%= upComingmovie["title"] %></strong>
-                    - Release On: <%= upComingmovie["release_date"] %>
-                    - <%= upComingmovie["overview"] %>
-                    - <em>Rating: <%= upComingmovie["vote_average"] %></em>
+                    <div class="container-fluid">
+                        <img src="https://image.tmdb.org/t/p/original<%= upComingmovie["poster_path"] %>"></br>
+                        <strong class="title"><%= upComingmovie["title"] %></strong></br>
+                        Release On: <%= upComingmovie["release_date"] %></br>
+                        <%= upComingmovie["overview"] %></br>
+                        <em>Rating: <%= upComingmovie["vote_average"] %></em>
+                    </div>
                 </li>
             <% }) %>
         </ul>

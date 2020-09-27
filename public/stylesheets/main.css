@@ -33,16 +33,63 @@ h1 {
     padding-top: 170px;
 }
 
-.movies {
-    height: 100vh;
+.container-fluid {
+    margin: 20px;
+    background-color:#F5F5F5;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .descriptions {
     padding-top: 65px;
 }
 
-h2 {
-    margin: 0;
-    padding-top: 65px
+ul {
+    list-style: none;
 }
 
+h2 {
+    margin: 0;
+    padding-top: 65px;
+    padding-left: 50px;
+}
+
+h3 {
+    margin: 25px 0 0 0;
+    text-align: center;
+}
+.noReviews {
+    height: 90vh;
+    padding-top: 130px;
+}
+
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.oops {
+    width: 550px;
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+strong.title {
+    font-size: 30px;
+}
+
+input.submit {
+    float: right;
+}
+
+.btn {
+    float: right;
+    margin: 10px
+}
+
+.btn-success {
+    margin: 0 0 0 10px;
+}
